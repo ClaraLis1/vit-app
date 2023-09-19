@@ -1,0 +1,6 @@
+estructura.
+
+1) hacer un componente layout que se va a importar en cada pagina para renderizar la info del head
+Dentro de Layout incluir el Navbar para que se renderice en todas las pagina y el footer si lo queremos asi
+
+ver locale

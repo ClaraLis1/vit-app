@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #5b5b5b;
+}
+
+.infoContainer{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fafafa;
+    height: 5rem;
+    padding-left: 2rem;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80px;
+    color: rgb(56, 55, 55);
+    padding-right: 2rem;   
+    
+} 
+
+.iconLink {    
+    position: fixed; /* También puedes usar 'absolute' si lo prefieres */
+    bottom: 20px;   /* Ajusta la distancia desde la parte inferior según tus preferencias */
+    right: 20px;    /* Ajusta la distancia desde la derecha según tus preferencias */
+    z-index: 999;   /* Asegura que el enlace esté por encima de otros elementos */
+}
+

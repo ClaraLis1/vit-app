@@ -1,0 +1,42 @@
+.navbar{
+    max-width: 100%;
+    background-color:rgba(82, 82, 95, 0.288);
+    color:#fafafa;
+    /* padding: 0 2rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;    
+    /* padding: 10px; */
+    z-index: 1000; /* Valor alto para que el navbar se superponga */
+    font-family: var(--font-nunito)
+  }
+  
+  .navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0 2rem
+  }
+  
+  .localeSwitch {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-left: 20px;
+  }
+  
+  .localeSwitch p {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .active {
+    color:red;
+  }
