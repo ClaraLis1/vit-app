@@ -11,7 +11,7 @@ const Presentation = () => {
   
      <div id='home' className={styles.videoContainer}>     
         <video  className={styles.video}   preload="true" loop autoPlay muted>
-          {/* <source src="/video/presentacion.mp4" type="video/mp4" /> */}
+          <source src="/video/presentacion.mp4" type="video/mp4" />
           {/* <source src="/girasolvideo.mp4" type="video/mp4" /> */}
           Tu navegador no admite el elemento video.
         </video>

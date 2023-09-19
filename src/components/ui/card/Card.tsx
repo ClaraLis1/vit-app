@@ -22,8 +22,8 @@ export const Card: FC<Props> = ({product}) => {
 			<Image
                 src={product.image}
 				alt={product.title}
-				width={400}
-				height={225}				
+				width={260}
+				height={158}				
 				loading="lazy"
 				decoding="async"
 				// sizes="(min-width: 66em) 33vw,
