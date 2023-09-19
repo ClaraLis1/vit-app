@@ -1,42 +1,63 @@
-.navbar{
-    max-width: 100%;
-    background-color:rgba(82, 82, 95, 0.288);
-    color:#fafafa;
-    /* padding: 0 2rem; */
+.navbar {
+  max-width: 100%;
+  background-color: rgba(82, 82, 95, 0.288);
+  color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 1000;
+  font-family: var(--font-nunito);
+}
+
+/* Estilos para la lista de navegación en pantallas más grandes */
+.navbar .navList {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+/* Estilos para el botón de hamburguesa */
+.navbar .menuIcon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.navbar .bar {
+  width: 25px;
+  height: 3px;
+  background-color:  rgb(56, 55, 55);
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Estilos para mostrar el botón de hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar .menuIcon {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
+  }
+  
+  .navbar .navList {
+    padding-right: 50px;    
+    display: none;
+    align-items: flex-end;
+  }
+
+  .navbar .navList.showNav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(82, 82, 95, 0.288);
+    position: absolute;
+    top: 100px;
     left: 0;
-    height: 100px;
-    width: 100%;    
-    /* padding: 10px; */
-    z-index: 1000; /* Valor alto para que el navbar se superponga */
-    font-family: var(--font-nunito)
+    right: 0;
+    padding: 20px;
   }
-  
-  .navbar ul{
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-    padding: 0 2rem
-  }
-  
-  .localeSwitch {
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    margin-left: 20px;
-  }
-  
-  .localeSwitch p {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .active {
-    color:red;
-  }
+}
