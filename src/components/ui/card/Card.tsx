@@ -17,7 +17,7 @@ export const Card: FC<Props> = ({product}) => {
 
 	  
 	const handleClick = ()=>{
-		// router.push(`/${product?.path}`)
+		router.push(`/${product?.path}`)
 	}
 
 
