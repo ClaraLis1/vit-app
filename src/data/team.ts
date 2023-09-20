@@ -5,32 +5,32 @@ const team: TeamI[] = [
   {
     id: 1,
     title: "Santiago",
-    position: "CEO",
+    position: "Productor Agropecuario",
     image: '/img/team/Santiago.jpeg'
   },
   {
     id: 2,
     title: "Lazaro",
-    position: "Cereales",
+    position: "Asesor Cereales",
     image: '/img/team/lazaroMaiz.jpeg'
   },
   {
     id: 3,
-    title: "Jorge",
+    title: "Jorge Osinaga",
     position: "Administracion",
-    image: '/img/team/lazaro.jpeg'
+    image: '/img/team/jorge.jpeg'
   },
   {
     id: 4,
     title: "Pedro",
     position: "Produccion",
-    image: '/img/team/lazaro.jpeg'
+    image: '/img/team/jian.jpeg'
   },
   {
     id: 5,
     title: "Pedro",
     position: "Agronomo",
-    image: '/img/team/lazaro.jpeg'
+    image: '/img/team/pedro.jpeg'
   },
   {
     id: 6,
