@@ -24,7 +24,7 @@ const Home: NextPage<Props>= ({products,team}) =>  {
           id={'team'}
           title = {'Equipo'}/> 
         <div  className={styles.separador}> 
-          <Image src='/logo-vita.png' alt='logo' width={400} height={400} className={styles.image}></Image>
+          <Image src='/logo-vita.png' alt='logo' width={400} height={400} className={styles.imagen}></Image>
         </div>
        <Units 
           products = {products}         

@@ -1,4 +1,5 @@
 .separador {    
+  margin-top: 3rem;
   background-image: url('../../public/cebada.jpeg'),  linear-gradient(to bottom, rgba(0,0,0,0.2), rgb(1, 153, 46));
   background-repeat: no-repeat;
   background-position: center; 
@@ -7,7 +8,7 @@
   flex-direction: column;    
   align-items: center;
   justify-content: center;
-  min-height: 60vh;  
+  min-height: 30vh;  
   position: relative;
 }
 

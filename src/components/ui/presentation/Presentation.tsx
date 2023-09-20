@@ -16,7 +16,8 @@ const Presentation = () => {
           Tu navegador no admite el elemento video.
         </video>
       <div className={styles.content}>
-        <Image src='/logo_sin_fondo.png' alt='logo' width={500} height={300} className={styles.image}></Image>
+        <Image src='/logo_sin_fondo.png' alt='logo' width={500} height={300} className={styles.imagen}></Image>
+        
       {/* <div className={styles.overlay}>      
       <p className={styles.animation}>Bienvenidos</p>
     </div> */}

@@ -3,4 +3,5 @@ export interface Product {
     title: string;
     position: string
     image: string;
+    path: string
   }

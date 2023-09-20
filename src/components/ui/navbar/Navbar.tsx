@@ -25,16 +25,16 @@ export const Navbar = () => {
         <div className={styles.bar}></div>
       </div>
       <ul className={`${styles.navList} ${menuOpen ? styles.showNav : ""}`}>
-        <li>
-          <Link href='#team'>Equipo</Link>
+        <li onClick={toggleMenu}>
+          <Link href='#team' >Equipo</Link>
         </li>
-        <li>
+        <li  onClick={toggleMenu}>
           <Link href="#empresa">Empresa</Link>
         </li>
-        <li>
+        <li  onClick={toggleMenu}>
           <Link href="/novedades">Novedades</Link>
         </li>
-        <li>
+        <li  onClick={toggleMenu}>
           <Link href="/contacto">Contacto</Link>
         </li>
       </ul>

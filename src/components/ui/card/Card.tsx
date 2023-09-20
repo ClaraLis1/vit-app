@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./Card.module.css";
 import {useRouter} from "next/router";
 import { Product } from "@/interface/product";
+import { log } from "console";
 
 
 interface Props {
@@ -12,11 +13,17 @@ interface Props {
 
 export const Card: FC<Props> = ({product}) => {
 	
-	const router = useRouter();    
+	const router = useRouter();  
+	console.log(product);
+	  
+	const handleClick = ()=>{
+		router.push(`/${product.path}`)
+	}
+
 
 	return (
 		// <div className={styles.card} onClick={handleClick}>
-		<div className={styles.card}>			
+		<div className={styles.card} onClick={handleClick}>			
 			<h3>{product.title}</h3>
 			<p>{product.position}</p>			
 			<Image
@@ -26,12 +33,6 @@ export const Card: FC<Props> = ({product}) => {
 				height={158}				
 				loading="lazy"
 				decoding="async"
-				// sizes="(min-width: 66em) 33vw,
-				// (min-width: 44em) 50vw,
-				// 100vw"
-				
-				
-				// priority={true}
 			/> 
 		</div>
 		

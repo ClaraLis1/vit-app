@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 70vh;
   }
 
 
@@ -33,29 +33,30 @@
     position: absolute; 
     bottom: 0;
     left: 0;
-    right: 0;    
-  }
+    right: 0;
+    width: 200px;
+    }
 
-  .overlay {
+  /* .imagen {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: 150px;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 10px;
     color: white;
     font-size: 18px;
     text-align: center;
-    animation: fadeAnimation 5s infinite ; /* Animación intermitente */
-    opacity: 0; /* Empieza invisible */
+    animation: fadeAnimation 5s infinite ; 
+    opacity: 0; 
   }
 
   @keyframes fadeAnimation {
     0%, 100% {
-      opacity: 0; /* Invisible al principio y al final */
+      opacity: 0; 
     }
     50% {
-      opacity: 1; /* Visible en la mitad de la animación */
+      opacity: 1; 
     }
-  }
+  } */
