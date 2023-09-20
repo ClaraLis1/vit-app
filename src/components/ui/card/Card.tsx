@@ -14,7 +14,7 @@ interface Props {
 export const Card: FC<Props> = ({product}) => {
 	
 	const router = useRouter();  
-	console.log(product);
+
 	  
 	const handleClick = ()=>{
 		router.push(`/${product.path}`)
