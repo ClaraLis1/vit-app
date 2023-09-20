@@ -24,7 +24,7 @@ const team: TeamI[] = [
     id: 4,
     title: "Pedro",
     position: "Produccion",
-    image: '/img/team/jian.jpeg'
+    image: '/img/team/juan.jpeg'
   },
   {
     id: 5,
