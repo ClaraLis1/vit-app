@@ -17,12 +17,12 @@ export const Card: FC<Props> = ({product}) => {
 
 	  
 	const handleClick = ()=>{
-		router.push(`/${product.path}`)
+		// router.push(`/${product?.path}`)
 	}
 
 
 	return (
-		// <div className={styles.card} onClick={handleClick}>
+	
 		<div className={styles.card} onClick={handleClick}>			
 			<h3>{product.title}</h3>
 			<p>{product.position}</p>			
@@ -33,6 +33,7 @@ export const Card: FC<Props> = ({product}) => {
 				height={158}				
 				loading="lazy"
 				decoding="async"
+				// priority
 			/> 
 		</div>
 		

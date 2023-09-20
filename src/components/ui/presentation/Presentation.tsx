@@ -16,7 +16,7 @@ const Presentation = () => {
           Tu navegador no admite el elemento video.
         </video>
       <div className={styles.content}>
-        <Image 
+       <Image 
           src='/logo_sin_fondo.png' 
           alt='logo' 
           width={500} 
@@ -25,12 +25,10 @@ const Presentation = () => {
           priority={true}
           placeholder="blur"
           blurDataURL={'logo_sin_fondo.png'}
-          ></Image>
-        
-      {/* <div className={styles.overlay}>      
-      <p className={styles.animation}>Bienvenidos</p>
-    </div> */}
-      {/* Aquí puedes agregar más contenido sobre el video */}
+        >          
+      </Image>
+       
+
     </div>
   </div>  
     </>
