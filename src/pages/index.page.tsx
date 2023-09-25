@@ -38,11 +38,11 @@ const Home: NextPage<Props>= ({products,team}) =>  {
 export default Home;
 
 export const getServerSideProps = async () => {
-  // const res = await fetch("https://vitapp.vercel.app/api/products")
-  const res = await fetch("http://localhost:3000/api/products")
+  const res = await fetch("https://vitapp.vercel.app/api/products")
+  // const res = await fetch("http://localhost:3000/api/products")
   const products : Product[] = await res.json() 
-  const resTeam = await fetch("http://localhost:3000/api/team")
-  // const resTeam = await fetch("https://vitapp.vercel.app/api/team")
+  // const resTeam = await fetch("http://localhost:3000/api/team")
+  const resTeam = await fetch("https://vitapp.vercel.app/api/team")
   const team : TeamI[] = await resTeam.json()   
   return{props:
       {products, 
