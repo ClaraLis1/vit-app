@@ -16,20 +16,20 @@ const team: TeamI[] = [
   },
   {
     id: 3,
-    title: "Jorge Osinaga",
-    position: "Administracion",
-    image: '/img/team/jorge.jpeg'
-  },
-  {
-    id: 4,
-    title: "Pedro",
-    position: "Produccion",
+    title: "Diego Yungblut",
+    position: "Agrónomo",
     image: '/img/team/juan.jpeg'
   },
   {
+    id: 4,   
+    title: "Jorge Osinaga",
+    position: "Administración",
+    image: '/img/team/jorge.jpeg'
+  },
+  {
     id: 5,
-    title: "Pedro",
-    position: "Agronomo",
+    title: "Pedro Serrano",
+    position: "Administrativo",
     image: '/img/team/pedro.jpeg'
   },
   {

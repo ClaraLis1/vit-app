@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "./Card.module.css";
 import {useRouter} from "next/router";
 import { Product } from "@/interface/product";
-import { log } from "console";
 
 
 interface Props {
