@@ -1,57 +1,16 @@
-/* .separador {    
-    
+.separador {    
     margin-top: 100px;
     background-image: url('../../../../public/cebada.jpeg'),  linear-gradient(to bottom, rgba(0,0,0,0.2), rgb(1, 153, 46));
+    background-image: url('../../../../public/cebada.jpeg'),  linear-gradient(to right top, orange 49%, transparent 50%);
     background-repeat: no-repeat;
-    background-position: center; 
-    background-color: rgba(0, 0, 0, 0.7);    
+    background-position: left; 
+    /* background-color: rgba(0, 0, 0, 0.7);     */
     display: flex; 
     flex-direction: column;    
     align-items: center;
     justify-content: center;
     min-height: 30vh;  
     position: relative;
-   
-  } */
+    
 
-  /* Estilos para el contenedor de la imagen */
-.imageContainer {
-  position: relative;
-  width: 800px; /* Ajusta el ancho según tus necesidades */
-  height: 600px; /* Ajusta la altura según tus necesidades */
-  overflow: hidden;
-}
-
-/* Estilos para la imagen */
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-  position: relative;
-}
-
-/* Estilos para el borde asimétrico */
-.image::before,
-.image::after {
-  content: '';
-  position: absolute;
-  background: #fff; /* Color del borde asimétrico */
-}
-
-/* Borde asimétrico superior */
-.image::before {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20px; /* Ajusta el grosor del borde superior según tus necesidades */
-  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
-
-/* Borde asimétrico inferior */
-.image::after {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20px; /* Ajusta el grosor del borde inferior según tus necesidades */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%);
-}
+  } 

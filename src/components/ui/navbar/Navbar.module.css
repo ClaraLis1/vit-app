@@ -11,7 +11,7 @@
   height: 100px;
   width: 100%;
   z-index: 1000;
-  font-family: var(--font-nunito);
+  font-family: var(--font-mono);
 }
 
 /* Estilos para la lista de navegación en pantallas más grandes */
