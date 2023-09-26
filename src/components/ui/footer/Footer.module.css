@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -14,9 +14,26 @@
     color: #fafafa;
     height: 5rem;
     padding-left: 2rem;
+    width: 100%;
 }
 
-.icon{
+.infoContainerRight{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fafafa;  
+    height: 5rem;
+    padding-left: 2rem;
+    width: 100%;
+}
+.contact{
+    display: flex;
+    flex: row;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.homeIcon{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,8 +45,43 @@
 
 .iconLink {    
     position: fixed; /* También puedes usar 'absolute' si lo prefieres */
-    bottom: 20px;   /* Ajusta la distancia desde la parte inferior según tus preferencias */
+    bottom: 100px;   /* Ajusta la distancia desde la parte inferior según tus preferencias */
     right: 20px;    /* Ajusta la distancia desde la derecha según tus preferencias */
     z-index: 999;   /* Asegura que el enlace esté por encima de otros elementos */
 }
 
+.icon{
+   
+    color: #fafafa;
+    width: 20px;
+    height: 20px;  
+ 
+} 
+
+@media only screen and (min-width: 768px) {
+    .container{        
+        flex-direction: row;        
+    }
+    .infoContainer{    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fafafa;
+        height: 5rem;
+        padding-left: 2rem;
+        width: 50%;
+    }
+    
+    .infoContainerRight{    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fafafa;
+        align-items: flex-end;
+        height: 5rem;
+        padding-right: 2rem;
+        width: 50%;
+    }
+    
+  
+  }
