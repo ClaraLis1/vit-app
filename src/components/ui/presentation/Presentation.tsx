@@ -21,7 +21,6 @@ const Presentation = () => {
           alt='logo' 
           width={500} 
           height={300} 
-          className={styles.image} 
           priority={true}
           placeholder="blur"
           blurDataURL={'logo_sin_fondo.png'}
