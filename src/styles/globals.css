@@ -4,15 +4,11 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;  
-  --font-nunito: 'Nunito Sans', sans-serif;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-nunito: 'Nunito Sans', sans-serif;  
   --font-mono:  'Montserrat', sans-serif;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -101,7 +97,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  font-family: var(--font-nunito);
+  /* font-family: var(--font-nunito); */
 }
 
 html, body {
