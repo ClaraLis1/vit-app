@@ -4,9 +4,9 @@ import { NextPage } from "next";
 
 const contacto : NextPage = ()=>{
     return(
-        <Layout title='contacto'>
+        
             <ContactForm/>
-        </Layout>
+       
     )
 }
 

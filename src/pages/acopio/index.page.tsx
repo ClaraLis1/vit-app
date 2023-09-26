@@ -1,9 +1,14 @@
+import UnitCards from "@/components/ui/unitCards/UnitCards";
 import { NextPage } from "next";
+
 
 const Index :NextPage=()=>{
 
     return(
-        <h1>Acopio</h1>
+        <>
+        
+           <UnitCards/> 
+        </>
     )
 
 } 

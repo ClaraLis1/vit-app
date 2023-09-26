@@ -15,7 +15,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div>
-        <Link href="#home" as={'image'}>
+        <Link href="/" >
           <Image src="/logo.jpeg" alt="Logo App" width={100} height={100} priority={true} />
         </Link>
       </div>

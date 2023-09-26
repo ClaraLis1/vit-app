@@ -2,6 +2,8 @@ import Head from "next/head";
 import { FC } from "react";
 import { Navbar } from '../ui/navbar';
 import { Footer } from "../ui/footer/Footer";
+import styles from '@/components/layout/Layout.module.css'
+
 
 
 interface Props {
@@ -41,12 +43,11 @@ export const Layout: FC<Props> = ({children, title, description, keywords}) => {
 				<link rel="icon" href="/favicon.ico" />
 				<meta charSet='utf-8' />
       </Head>
-      	<Navbar />
-	
-      <main>
-		{children}
+      	<Navbar />	
+		<main className={styles.container}>
+			{children}
 		</main>
-      <Footer/>
+      	<Footer/>
 		</>
 	);
 };

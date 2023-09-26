@@ -17,7 +17,8 @@ import { TeamI } from '@/interface/team';
 const Home: NextPage<Props>= ({products,team}) =>  {
   
   return (   
-    <Layout title='Vita Neg. Agrop - Inicio'>
+    // <Layout title='Vita Neg. Agrop - Inicio'>
+    <>
       <Presentation/>
        <Team 
           team = {team }          
@@ -30,7 +31,8 @@ const Home: NextPage<Props>= ({products,team}) =>  {
           products = {products}         
           id = {'empresa'}
           title = {'Unidades de Negocio'}/>        
-      </Layout>   
+    </>
+      // </Layout>   
   )
 }
 
