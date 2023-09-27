@@ -1,16 +1,29 @@
-.separador {    
-    margin-top: 100px;
-    background-image: url('../../../../public/cebada.jpeg'),  linear-gradient(to bottom, rgba(0,0,0,0.2), rgb(1, 153, 46));
-    background-image: url('../../../../public/cebada.jpeg'),  linear-gradient(to right top, orange 49%, transparent 50%);
-    background-repeat: no-repeat;
-    background-position: left; 
-    /* background-color: rgba(0, 0, 0, 0.7);     */
-    display: flex; 
-    flex-direction: column;    
-    align-items: center;
-    justify-content: center;
-    min-height: 30vh;  
-    position: relative;
-    
+.container{
+  display: flex;
+  flex-direction: row;
+  min-height: 35vh;
+  margin-top: 10rem;
 
-  } 
+}
+
+.imageContainer{
+  border-radius: 20px;
+  background-image: url('../../../../public/img/units/silosarriba.JPG');
+  background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+  width: 50%;
+  height: 50vh;
+}
+
+.textContainer{
+  border-radius: 20px;
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  padding: 1rem;
+}
+
+.textContainer p{
+  margin-top: 10px;
+}
