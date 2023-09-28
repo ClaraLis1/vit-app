@@ -1,29 +1,42 @@
 .container{
   display: flex;
-  flex-direction: row;
-  min-height: 35vh;
+  flex-direction: column;  
   margin-top: 10rem;
-
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .imageContainer{
   border-radius: 20px;
-  background-image: url('../../../../public/img/units/silosarriba.JPG');
+  /* background-image: url('../../../../public/img/units/silosarriba.JPG'); */
   background-position: center;
 	background-attachment: contain;
 	background-size: cover;
-  width: 50%;
+  width: 100%;
   height: 50vh;
+
+ 
 }
 
 .textContainer{
   border-radius: 20px;
-  width: 50%;
-  height: 50vh;
+  width: 100%;
   text-align: center;
   padding: 1rem;
 }
 
 .textContainer p{
   margin-top: 10px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .textContainer, .imageContainer{
+    width: 100%; 
+    margin: 0 auto;
+  }
+
+ 
+  
 }

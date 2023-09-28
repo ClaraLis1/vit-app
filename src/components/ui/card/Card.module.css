@@ -1,31 +1,36 @@
 .card {
+    
     width: 100%;
     padding: 1.2rem 1.2rem;
     border-radius: var(--border-radius);
-    background: rgba(var(--card-rgb), 0.5);
+    background: rgba(var(--card-rgb),0.6);
     border: 1px solid rgba(var(--card-border-rgb), 0);
     transition: background 200ms, border 200ms;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);     
-    display: flex;
+    display: grid;
+    grid-template-rows: auto 50px auto  auto auto;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
     position: relative;
     cursor: pointer;
   }
+
   
-  .card p {
+  .card .text {
     /* display: inline-block; */
     transition: transform 200ms;
     opacity: 0.6;
     margin-bottom: 10px;
+    grid-row: 2/3;
   }
 
   .card img{  
+    grid-row: 3/5;
       /* width: 100px;
       height: 100px;  */
       /* border-radius: var(--border-radius); */
-      background-color: #3498db;     
+          
   }
   
   .card h3 {
@@ -34,14 +39,22 @@
     margin-bottom: 0.7rem;
   }
   
-  /* .card p {
-    margin: 0;
-    opacity: 0.6;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    max-width: 30ch;
-  } */
+  .button{
+    border-radius:5px ;
+    width: fit-content;
+    padding: 3px;
+    margin: auto;
+    margin-top: 10px;
+    border: rgba(var(--card-rgb),0.6)solid 1px ;
+    background-color: rgba(var(--card-rgb),0.6);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);   
+  }
   
+  .button :hover{
+    
+    cursor: pointer;
+  }
+
   
   /* Enable hover only on non-touch devices */
   @media (hover: hover) and (pointer: fine) {

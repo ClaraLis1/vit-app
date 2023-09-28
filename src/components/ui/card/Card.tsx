@@ -16,7 +16,7 @@ export const Card: FC<Props> = ({product}) => {
 
 	  
 	const handleClick = ()=>{
-		router.push(`/${product?.path}`)
+		router.push(`/unidades-negocio/${product?.path}`)
 	}
 
 
@@ -24,16 +24,18 @@ export const Card: FC<Props> = ({product}) => {
 	
 		<div className={styles.card} onClick={handleClick}>			
 			<h3>{product.title}</h3>
-			<p>{product.position}</p>			
+			<p className={styles.text}>{product.position}</p>			
 			<Image
                 src={product.image}
 				alt={product.title}
+
 				width={260}
 				height={158}				
 				loading="lazy"
 				decoding="async"
-				// priority
+				style={{borderRadius: '10px', margin: '0 auto'}}
 			/> 
+			<span className={styles.button}>Mas info</span>
 		</div>
 		
 	);
