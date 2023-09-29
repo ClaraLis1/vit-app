@@ -14,6 +14,7 @@ interface Props {
  }
 
 const Team : FC<Props>= ({team, title, id}) => {
+
   return (
     <div id={id} className={styles.article}>
           <h1 className={styles.sectionTitle}> <b></b> <span>{title}</span> <b></b> </h1>
