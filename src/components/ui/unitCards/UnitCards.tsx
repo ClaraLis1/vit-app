@@ -24,8 +24,9 @@ const UnitCards: FC<Props> = ({data}) => {
         </Image>
         </div> 
         <div className={styles.textContainer}>
-          <h1>{data.path}</h1>
-          <p>
+          <h1 className={styles.unitTitle}>{data.position}</h1>
+          <h1 className={styles.unitTitle}>{data.path}</h1>
+          <p className={styles.textInfo}>
           {data.description}
           </p>
         </div>
