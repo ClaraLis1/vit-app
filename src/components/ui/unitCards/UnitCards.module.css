@@ -1,10 +1,11 @@
 .container{
   display: flex;
-  flex-direction: row;  
+  flex-direction: column; 
   margin-top: 10rem;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 2rem;
+  align-items: center;
 }
 
 .imageContainer{
@@ -33,16 +34,46 @@
 }
 
 .textInfo{
+  font-weight: 600;
+  font-size:18px;
   margin-top: 20px;
   text-align: left;
+  color: dimgray;
  
 }
+.buttonContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+.button{
+  text-align: center;
+  border-radius:5px ;
+  width: fit-content;
+  width: 20%;
+  padding: 10px;  
+  margin-top: 10px;  
+  margin-bottom: 20px; 
+  font-weight: 600;
+  font-size:18px; 
+  color: dimgray;
+  border: none;
+  background-color: rgba(var(--card-rgb),0.7);
+}
 
 @media only screen and (min-width: 768px) {
+
+  .container{   
+    flex-direction: row;    
+  }
+  
+
   .textContainer, .imageContainer{
     width: 100%; 
     margin: 0 auto;
+
+   
   }
 
  

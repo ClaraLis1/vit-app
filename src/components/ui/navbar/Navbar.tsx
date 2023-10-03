@@ -26,7 +26,7 @@ export const Navbar = () => {
       </div>
       <ul className={`${styles.navList} ${menuOpen ? styles.showNav : ""}`}>
         <li onClick={toggleMenu}>
-          <Link href='#team' >Equipo</Link>
+          <Link href={'#team'}>Equipo</Link>
         </li>
         <li  onClick={toggleMenu}>
           <Link href="#empresa">Empresa</Link>
