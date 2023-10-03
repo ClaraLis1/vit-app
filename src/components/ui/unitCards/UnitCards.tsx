@@ -23,15 +23,14 @@ const UnitCards: FC<Props> = ({data}) => {
         >
         </Image>
         </div> 
-        <div className={styles.textContainer}>
-          <h1 className={styles.unitTitle}>{data.position}</h1>
-          <h1 className={styles.unitTitle}>{data.path}</h1>
-          {/* {data.description?.map((item, index) =>(
+        <div className={styles.textContainer}>        
+          <h1 className={styles.unitTitle}>{data.title} - {data.position}</h1>
+           {data.description?.map((item, index) =>(
             <p key={index} className={styles.textInfo}>
               {item}
             </p>
           )) }
-          */}
+         
         </div>
 
       </div>

@@ -5,8 +5,6 @@
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 2rem;
-   
-
 }
 
 .imageContainer{
@@ -23,6 +21,7 @@
 
 .unitTitle{
   color: dimgray;
+  text-transform: capitalize;
 }
 
 .textContainer{  
@@ -35,6 +34,7 @@
 
 .textInfo{
   margin-top: 20px;
+  text-align: left;
  
 }
 
