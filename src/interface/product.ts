@@ -4,5 +4,5 @@ export interface Product {
     position: string
     image: string;
     path: string
-    description: string
+    description: string []
   }

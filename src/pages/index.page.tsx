@@ -1,6 +1,5 @@
 
 import styles from '@/styles/Home.module.css'
-import { Layout } from '@/components/layout/Layout'
 import { InferGetServerSidePropsType, NextPage } from 'next'
 import { Product } from '@/interface/product';
 import Image from 'next/image';
