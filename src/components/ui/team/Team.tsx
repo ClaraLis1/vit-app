@@ -18,8 +18,7 @@ const Team : FC<Props>= ({team, title, id}) => {
   return (
     <div id={id} className={styles.article}>
           <h1 className={styles.sectionTitle}> <b></b> <span>{title}</span> <b></b> </h1>
-          <div className={styles.grid}>
-          
+          <div className={styles.grid}>          
             {team?.map((t) => (
               <TeamCard key={t.id} team={t} />            
             ))}
