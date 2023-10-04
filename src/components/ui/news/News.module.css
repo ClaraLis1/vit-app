@@ -1,0 +1,44 @@
+.content{
+    margin-top: 100px;
+    min-height: 80vh;
+}
+
+.imagesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionTitle {
+    padding-top: 40px;
+    align-items: center;
+    color: var(--titles);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .sectionTitle b {
+    color: var(--titles);      
+    background-color: currentColor;
+    display: block;
+    flex: 1;
+    height: 2px;
+    opacity: 0.6;
+    margin: 0 40px;
+   
+  }
+  
+@media only screen and (min-width: 768px) {
+    .imagesContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}

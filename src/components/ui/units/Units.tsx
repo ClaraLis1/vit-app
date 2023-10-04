@@ -15,7 +15,7 @@ interface Props {
 const Units : FC<Props>= ({products, title, id}) => {
   return (
     <div id={id} className={styles.article}>
-          <h1 className={styles.sectionTitle}> <b></b> <span>{title}</span> <b></b> </h1>
+          <h1 className={styles.sectionTitle}> <b ></b> <span>{title}</span> <b ></b> </h1>
           <div className={styles.grid}>
             {products?.map((product) => (
               <Card key={product.id} product={product} />            

@@ -20,6 +20,7 @@
   justify-content: space-between;
   position: relative;
   width: 100%;
+  
 }
 
 .sectionTitle b {
@@ -28,9 +29,11 @@
   display: block;
   flex: 1;
   height: 2px;
-  opacity: .1;
+  opacity: 0.6;
   margin: 0 40px;
+ 
 }
+
 
 
 @media only screen and (min-width: 768px) {

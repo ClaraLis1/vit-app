@@ -1,8 +1,17 @@
-.container{
+.containerData{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    background-color: #5b5b5b;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
     width: 100%;
     background-color: #5b5b5b;
 }
@@ -38,6 +47,18 @@
     display: none;
 }
 
+.copyWrite{
+    color: #fafafa; 
+    font-size: 12px;
+    justify-content: end;
+   
+}
+
+.iconCopyWrite{   
+    color: #fafafa;
+    width: 12px;
+    height: 12px;   
+} 
 .homeIcon{
     display: flex;
     flex-direction: column;
@@ -55,12 +76,10 @@
     z-index: 999;   /* Asegura que el enlace esté por encima de otros elementos */
 }
 
-.icon{
-   
+.icon{   
     color: #fafafa;
     width: 20px;
-    height: 20px;  
- 
+    height: 20px;   
 } 
 
 @media only screen and (min-width: 768px) {

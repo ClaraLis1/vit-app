@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
   const router = useRouter();
@@ -25,17 +27,17 @@ export const Navbar = () => {
         <div className={styles.bar}></div>
       </div>
       <ul className={`${styles.navList} ${menuOpen ? styles.showNav : ""}`}>
+        <li onClick={toggleMenu} className={styles.user}>
+          <Link href="/"> <FontAwesomeIcon icon={faUser} className={styles.icon} /> Clientes</Link>
+        </li>
         <li onClick={toggleMenu}>
-          <Link href={'#team'}>Equipo</Link>
+          <Link href={`${router.asPath == '/' ? '#team': '/'}`}>Equipo</Link>
         </li>
-        <li  onClick={toggleMenu}>
-          <Link href="#empresa">Empresa</Link>
+        <li onClick={toggleMenu}>
+          <Link href={`${router.asPath == '/' ? '#empresa': '/'}`}>Empresa</Link>
         </li>
-        <li  onClick={toggleMenu}>
+        <li onClick={toggleMenu}>
           <Link href="/novedades">Novedades</Link>
-        </li>
-        <li  onClick={toggleMenu}>
-          <Link href="/contacto">Contacto</Link>
         </li>
       </ul>
     </nav>

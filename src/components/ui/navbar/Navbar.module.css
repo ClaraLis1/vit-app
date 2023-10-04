@@ -20,6 +20,8 @@
   list-style: none;
   gap: 1rem;
   padding: 0 2rem;
+  align-items: center;
+  align-self: center;
 }
 
 /* Estilos para el botón de hamburguesa */
@@ -28,6 +30,7 @@
   flex-direction: column;
   cursor: pointer;
   margin-right: 50px;
+  
 }
 
 .navbar .bar {
@@ -38,6 +41,18 @@
   transition: 0.4s;
 }
 
+.icon{
+  color: #fafafa;
+  width: 16px;
+  height: 16px;  
+}
+
+.user{
+  font-weight: 700;  
+  border: #fafafa solid 1px;
+  padding: 1rem;
+
+}
 /* Estilos para mostrar el botón de hamburguesa en pantallas pequeñas */
 @media (max-width: 768px) {
   .navbar .menuIcon {
@@ -48,6 +63,7 @@
     padding-right: 50px;    
     display: none;
     align-items: flex-end;
+    
   }
 
   .navbar .navList.showNav {
