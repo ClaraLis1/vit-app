@@ -4,8 +4,8 @@ import { Product } from "@/interface/product";
 const products: Product[] = [
   {
     id: 1,
-    title: "Feed Lot y Hoteleria",
-    position: "Engorde a Corral",
+    title: "Feed Lot",
+    position: "Engorde a Corral  y Hoteleria",
     image: '/img/products/feedlot.JPG',
     path:'feed-lot',
     description: [
@@ -23,7 +23,7 @@ const products: Product[] = [
   {
     id: 3,
     title: "Explotacion Agropecuaria",
-    position: "Cria y recría de Hacienda. Producción Agricola",
+    position: "Cria y recría. Producción Agricola",
     image: "/img/products/girasol.JPG",
     path:'produccion',
     description: ["Ganaderia: Nuestra producción agropecuaria es el primer eslabón de la cadena. Con campos destinados a la Cría y recría e implementando buenas prácticas producimos terneros.","Una vez destetados, los terneros siguen recriándose en lotes seleccionados con pasturas y forrajes especialmente pensados para la etapa de desarrollo del ternero."," También seleccionamos hembras con destino a la reposición de vientres. Una vez que adquieran la edad y la condición corporal adecuada, regresarán a los campos de cría para continuar con el ciclo productivo."," El resto de los animales, incluyendo toda la invernada adquirida que aún no está en condiciones de someterse a dietas de terminación, inician una etapa  de recría buscando ganar  músculo y el desarrollo de estructuras óseas. ","Así, creamos terneros sanos y fuertes que ingresarán al feedlot para su fase final de engorde."," Agricultura: Siguiendo con la integración hoy nuestra producción agrícola está pensada en abastecer nuestro feed lot.", "Producimos, Maíz  soja ,cebada, y  girasol, buscando una rotación de cultivos  para nuestros lotes en la cual podamos tener una agricultura  sostenible y beneficiosa en el tiempo."]
