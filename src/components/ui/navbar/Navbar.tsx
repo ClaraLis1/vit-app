@@ -28,7 +28,7 @@ export const Navbar = () => {
       </div>
       <ul className={`${styles.navList} ${menuOpen ? styles.showNav : ""}`}>
         <li onClick={toggleMenu} className={styles.user}>
-          <Link href="/"> <FontAwesomeIcon icon={faUser} className={styles.icon} /> Clientes</Link>
+          <Link href="/clientes"> <FontAwesomeIcon icon={faUser} className={styles.icon} /> Clientes</Link>
         </li>
         <li onClick={toggleMenu}>
           <Link href={`${router.asPath == '/' ? '#team': '/'}`}>Equipo</Link>
