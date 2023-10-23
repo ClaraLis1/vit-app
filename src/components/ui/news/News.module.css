@@ -14,8 +14,7 @@
     padding-top: 40px;
     align-items: center;
     color: var(--titles);
-    display: flex;
-    flex-flow: row wrap;
+    display: flex;    
     justify-content: space-between;
     position: relative;
     width: 100%;
@@ -32,13 +31,26 @@
     margin: 0 40px;
    
   }
+
+  .imagen{
+    width: 50%;
+    height: 50%;
+    
+  }
   
 @media only screen and (min-width: 768px) {
     .imagesContainer{
         display: flex;
         flex-direction: row;
+        gap: 3%;
         align-items: center;
         justify-content: space-around;
     }
+
+    .imagen{
+        width: 30%;
+        height: 30%;        
+      }
+      
 
 }

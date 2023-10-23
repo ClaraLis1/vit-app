@@ -15,6 +15,7 @@ const News: FC = () => {
             priority={true}
             placeholder="blur"
             blurDataURL={'logo_sin_fondo.png'}
+            className={styles.imagen}
             >          
         </Image>
        
@@ -26,6 +27,7 @@ const News: FC = () => {
             priority={true}
             placeholder="blur"
             blurDataURL={'logo_sin_fondo.png'}
+            className={styles.imagen}
             >          
         </Image>
 
