@@ -22,12 +22,18 @@ const team: TeamI[] = [
   },
   {
     id: 4,   
+    title: " Diego Germán Real",
+    position: "Médico Veterinario",
+    image: '/img/team/diego.jpeg'
+  },
+  {
+    id: 5,   
     title: "Jorge Osinaga",
     position: "Responsable Administración",
     image: '/img/team/jorge.jpeg'
   },
   {
-    id: 5,
+    id: 6,
     title: "Diego Yungblut",    
     position: "Administrativo",
     image: '/img/team/pedro.jpeg'
